@@ -1,0 +1,4 @@
+opencv-python==4.8.0.76
+deepface==0.0.78
+numpy==1.23.5
+tkinter==0.1.0  # Usually included with Python, but specify it if needed
