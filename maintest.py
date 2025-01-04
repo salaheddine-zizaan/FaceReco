@@ -4,6 +4,8 @@ from deepface import DeepFace
 import numpy as np
 import os  # Import the os module
 
+#in this code face detection works but not antispoof
+
 
 # Directory where authorized faces are stored
 faces_dir = "faces"
@@ -22,7 +24,7 @@ def load_known_faces(faces_dir):
 def recognize_face(frame, known_faces):
     try:
         # Use DeepFace's find method for face recognition
-        result = DeepFace.find(frame, db_path=faces_dir, enforce_detection=False)
+        result = DeepFace.find(frame, db_path=faces_dir, anti_spoofing=True)
 
         if result and len(result) > 0:
             # Extract the name from the result DataFrame
