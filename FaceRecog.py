@@ -6,6 +6,7 @@ from tkinter import Tk, Label, Button, messagebox
 from deepface import DeepFace
 from PIL import Image, ImageTk
 
+
 # Path to the folder containing known faces
 KNOWN_FACES_FOLDER = "faces"
 TEMP_IMAGE_PATH = "temp_img/temp_image.jpg"  # Path to store the single temporary image
